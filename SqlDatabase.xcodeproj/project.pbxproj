@@ -15,6 +15,11 @@
 		274FD8D51E00520B003B11D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 274FD8D31E00520B003B11D5 /* LaunchScreen.storyboard */; };
 		274FD8E01E00520B003B11D5 /* SqlDatabaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 274FD8DF1E00520B003B11D5 /* SqlDatabaseTests.m */; };
 		274FD8EB1E00520B003B11D5 /* SqlDatabaseUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 274FD8EA1E00520B003B11D5 /* SqlDatabaseUITests.m */; };
+		274FD8F91E005248003B11D5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274FD8F81E005248003B11D5 /* CoreGraphics.framework */; };
+		274FD8FC1E005258003B11D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274FD8FA1E005258003B11D5 /* Foundation.framework */; };
+		274FD8FD1E005258003B11D5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274FD8FB1E005258003B11D5 /* UIKit.framework */; };
+		27675F761E088CDF0041E577 /* Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27675F751E088CDF0041E577 /* Data.plist */; };
+		94CF33441E11D34C00721C88 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94CF33431E11D34C00721C88 /* ListViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,12 @@
 		274FD8E61E00520B003B11D5 /* SqlDatabaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SqlDatabaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		274FD8EA1E00520B003B11D5 /* SqlDatabaseUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SqlDatabaseUITests.m; sourceTree = "<group>"; };
 		274FD8EC1E00520B003B11D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		274FD8F81E005248003B11D5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		274FD8FA1E005258003B11D5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		274FD8FB1E005258003B11D5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		27675F751E088CDF0041E577 /* Data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Data.plist; sourceTree = "<group>"; };
+		94CF33421E11D34C00721C88 /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		94CF33431E11D34C00721C88 /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +69,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				274FD8FC1E005258003B11D5 /* Foundation.framework in Frameworks */,
+				274FD8FD1E005258003B11D5 /* UIKit.framework in Frameworks */,
+				274FD8F91E005248003B11D5 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +95,9 @@
 		274FD8B91E00520B003B11D5 = {
 			isa = PBXGroup;
 			children = (
+				274FD8FA1E005258003B11D5 /* Foundation.framework */,
+				274FD8FB1E005258003B11D5 /* UIKit.framework */,
+				274FD8F81E005248003B11D5 /* CoreGraphics.framework */,
 				274FD8C41E00520B003B11D5 /* SqlDatabase */,
 				274FD8DE1E00520B003B11D5 /* SqlDatabaseTests */,
 				274FD8E91E00520B003B11D5 /* SqlDatabaseUITests */,
@@ -106,10 +123,13 @@
 				274FD8CB1E00520B003B11D5 /* ViewController.h */,
 				274FD8CC1E00520B003B11D5 /* ViewController.m */,
 				274FD8CE1E00520B003B11D5 /* Main.storyboard */,
+				27675F751E088CDF0041E577 /* Data.plist */,
 				274FD8D11E00520B003B11D5 /* Assets.xcassets */,
 				274FD8D31E00520B003B11D5 /* LaunchScreen.storyboard */,
 				274FD8D61E00520B003B11D5 /* Info.plist */,
 				274FD8C51E00520B003B11D5 /* Supporting Files */,
+				94CF33421E11D34C00721C88 /* ListViewController.h */,
+				94CF33431E11D34C00721C88 /* ListViewController.m */,
 			);
 			path = SqlDatabase;
 			sourceTree = "<group>";
@@ -207,6 +227,7 @@
 				TargetAttributes = {
 					274FD8C11E00520B003B11D5 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 4S7XS533V3;
 					};
 					274FD8DA1E00520B003B11D5 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -243,6 +264,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27675F761E088CDF0041E577 /* Data.plist in Resources */,
 				274FD8D51E00520B003B11D5 /* LaunchScreen.storyboard in Resources */,
 				274FD8D21E00520B003B11D5 /* Assets.xcassets in Resources */,
 				274FD8D01E00520B003B11D5 /* Main.storyboard in Resources */,
@@ -272,6 +294,7 @@
 			files = (
 				274FD8CD1E00520B003B11D5 /* ViewController.m in Sources */,
 				274FD8CA1E00520B003B11D5 /* AppDelegate.m in Sources */,
+				94CF33441E11D34C00721C88 /* ListViewController.m in Sources */,
 				274FD8C71E00520B003B11D5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,6 +438,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4S7XS533V3;
 				INFOPLIST_FILE = SqlDatabase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mopub.SqlDatabase;
@@ -426,6 +451,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4S7XS533V3;
 				INFOPLIST_FILE = SqlDatabase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mopub.SqlDatabase;
@@ -498,6 +525,7 @@
 				274FD8F11E00520B003B11D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		274FD8F21E00520B003B11D5 /* Build configuration list for PBXNativeTarget "SqlDatabaseTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +534,7 @@
 				274FD8F41E00520B003B11D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		274FD8F51E00520B003B11D5 /* Build configuration list for PBXNativeTarget "SqlDatabaseUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +543,7 @@
 				274FD8F71E00520B003B11D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

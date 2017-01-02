@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AdNetworks</key>
+	<dict>
+		<key>Millennial Media</key>
+		<array>
+			<dict>
+				<key>Banner</key>
+				<string>1aa442709c9f11e281c11231392559e4</string>
+			</dict>
+			<dict>
+				<key>Interstitial</key>
+				<string>de4205fc932411e295fa123138070049</string>
+			</dict>
+			<dict>
+				<key>Native</key>
+				<string>b6191f80fa6f4241a942254df07f0b59</string>
+			</dict>
+		</array>
+		<key>AdMob</key>
+		<array>
+			<dict>
+				<key>Banner</key>
+				<string>e251c5ae02514e2bb2eb83f938435c34</string>
+			</dict>
+			<dict>
+				<key>Interstitial</key>
+				<string>16ae389a932d11e281c11231392559e4</string>
+			</dict>
+		</array>
+		<key>FAN</key>
+		<array>
+			<dict>
+				<key>Banner</key>
+				<string>446dfa864dcb4469965267694a940f3d</string>
+			</dict>
+			<dict>
+				<key>Interstitial</key>
+				<string>cec4c5ea0ff140d3a15264da23449f97</string>
+			</dict>
+			<dict>
+				<key>Native</key>
+				<string>1ceee46ba9744155aed48ee6277ecbd6</string>
+			</dict>
+			<dict>
+				<key>Native Video</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>AdColony</key>
+		<array>
+			<dict>
+				<key>Interstitial</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>Rewarded Video</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>Chartboost</key>
+		<array>
+			<dict>
+				<key>Interstitial</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>Rewarded Video</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>Conversant</key>
+		<array>
+			<dict>
+				<key>Banner</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>Interstitial</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>Tapjoy</key>
+		<array>
+			<dict>
+				<key>Interstitial</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>Rewarded Video</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>Yahoo</key>
+		<array>
+			<dict>
+				<key>Banner</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>Interstitial</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>Native </key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>Native Video</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>Unity</key>
+		<array>
+			<dict>
+				<key>Rewarded Video</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>Interstital</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>Vungle</key>
+		<array>
+			<dict>
+				<key>Interstitial</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>Rewarded Video</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+</dict>
+</plist>
