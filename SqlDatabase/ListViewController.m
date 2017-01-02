@@ -17,6 +17,8 @@
 
 @synthesize adList;
 
+int rowNo;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -86,6 +88,23 @@
     
     return cell;
 }
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    rowNo = indexPath.row;
+    
+    NSLog(@"rowNo is  %d", rowNo);
+    NSLog(@"ad %@",adList[rowNo]);
+    
+}
+
+//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+//{
+//    if ([segue.identifier isEqualToString:@"ShowDetail"]) {
+//        //Do something
+//        Detail *detailController = (Detail*)segue.destinationViewController;
+//    }
+//}
 
 
 

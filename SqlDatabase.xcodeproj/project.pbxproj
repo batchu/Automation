@@ -19,6 +19,7 @@
 		274FD8FC1E005258003B11D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274FD8FA1E005258003B11D5 /* Foundation.framework */; };
 		274FD8FD1E005258003B11D5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274FD8FB1E005258003B11D5 /* UIKit.framework */; };
 		27675F761E088CDF0041E577 /* Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27675F751E088CDF0041E577 /* Data.plist */; };
+		27E728DB1E1AD71900A1EE16 /* BannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E728DA1E1AD71900A1EE16 /* BannerViewController.m */; };
 		94CF33441E11D34C00721C88 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94CF33431E11D34C00721C88 /* ListViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,8 @@
 		274FD8FA1E005258003B11D5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		274FD8FB1E005258003B11D5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		27675F751E088CDF0041E577 /* Data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Data.plist; sourceTree = "<group>"; };
+		27E728DA1E1AD71900A1EE16 /* BannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerViewController.m; sourceTree = "<group>"; };
+		27E728DC1E1AD73E00A1EE16 /* BannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerViewController.h; sourceTree = "<group>"; };
 		94CF33421E11D34C00721C88 /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
 		94CF33431E11D34C00721C88 /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -130,6 +133,8 @@
 				274FD8C51E00520B003B11D5 /* Supporting Files */,
 				94CF33421E11D34C00721C88 /* ListViewController.h */,
 				94CF33431E11D34C00721C88 /* ListViewController.m */,
+				27E728DA1E1AD71900A1EE16 /* BannerViewController.m */,
+				27E728DC1E1AD73E00A1EE16 /* BannerViewController.h */,
 			);
 			path = SqlDatabase;
 			sourceTree = "<group>";
@@ -296,6 +301,7 @@
 				274FD8CA1E00520B003B11D5 /* AppDelegate.m in Sources */,
 				94CF33441E11D34C00721C88 /* ListViewController.m in Sources */,
 				274FD8C71E00520B003B11D5 /* main.m in Sources */,
+				27E728DB1E1AD71900A1EE16 /* BannerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
