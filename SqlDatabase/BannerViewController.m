@@ -1,21 +1,25 @@
-//
-//  BannerViewController.m
-//  SqlDatabase
-//
-//  Created by Pooja Shashidhar on 1/2/17.
-//  Copyright © 2017 Pooja Shashidhar. All rights reserved.
-//
-
-#import <Foundation/Foundation.h>
 
 
-@implementation ViewController
+#import "BannerViewController.h"
+@class ViewController;
 
-- (void)viewDidLoad {
-    
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
+@interface BannerViewController ()
 
 @end
 
+@implementation BannerViewController
+
+@synthesize bannerId;
+
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+     NSLog(@"from viewDidLoad of BannerViewController %@",bannerId);
+}
+
+
+
+
+
+@end

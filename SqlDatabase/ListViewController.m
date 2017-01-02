@@ -7,6 +7,7 @@
 //
 
 #import "ListViewController.h"
+#import "BannerViewController.h"
 @class ViewController;
 
 @interface ListViewController ()
@@ -16,6 +17,7 @@
 @implementation ListViewController
 
 @synthesize adList;
+@synthesize bannerId;
 
 int rowNo;
 
@@ -91,20 +93,26 @@ int rowNo;
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    rowNo = indexPath.row;
     
-    NSLog(@"rowNo is  %d", rowNo);
-    NSLog(@"ad %@",adList[rowNo]);
+   NSDictionary *selectedItem = [adList objectAtIndex:indexPath.row];
+   
+   NSString  *key = [[selectedItem allKeys] objectAtIndex:0]; // Assumes 'message' is not empty
+    NSString *value = [selectedItem objectForKey:key];
+    NSLog(@"ad name%@",key);
+     NSLog(@"ad id%@",value);
+    self.bannerId=value;
+      NSLog(@"bannerId value is %@",self.bannerId);
+    
+    [self performSegueWithIdentifier:@"bannerIdsequeId" sender:self];
     
 }
 
-//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-//{
-//    if ([segue.identifier isEqualToString:@"ShowDetail"]) {
-//        //Do something
-//        Detail *detailController = (Detail*)segue.destinationViewController;
-//    }
-//}
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    BannerViewController * destinationViewController = (BannerViewController *) segue.destinationViewController;
+    
+    destinationViewController.bannerId = self.bannerId;
+}
 
 
 

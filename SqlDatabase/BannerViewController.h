@@ -1,8 +1,8 @@
-//
-//  BannerViewController.h
-//  SqlDatabase
-//
-//  Created by Pooja Shashidhar on 1/2/17.
-//  Copyright © 2017 Pooja Shashidhar. All rights reserved.
-//
 
+
+#import <UIKit/UIKit.h>
+
+@interface BannerViewController : UIViewController 
+@property (weak, nonatomic) NSString *bannerId;
+
+@end

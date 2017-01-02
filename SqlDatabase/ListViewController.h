@@ -11,5 +11,5 @@
 @interface ListViewController : UIViewController <UITableViewDataSource>
 
 @property (weak, nonatomic) NSArray *adList;
-
+@property (weak, nonatomic) NSString *bannerId;
 @end
