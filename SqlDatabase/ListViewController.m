@@ -8,6 +8,8 @@
 
 #import "ListViewController.h"
 #import "BannerViewController.h"
+#import "MPAdInfo.h"
+
 @class ViewController;
 
 @interface ListViewController ()
@@ -37,7 +39,7 @@
 //added on 3/1/2017
 @synthesize adId;
 @synthesize title;
-@synthesize type;
+//@synthesize type;
 
 int rowNo;
 
@@ -104,6 +106,21 @@ int rowNo;
      NSLog(@"ad id%@",value);
     self.bannerId=value;
     
+    MPAdInfo *info = [[MPAdInfo alloc] init];
+    info.ID = value;
+    info.title=key;
+    info.type=0;
+    
+    UIViewController *detailViewController = nil;
+    
+    detailViewController = [[MPBannerAdDetailViewController alloc] initWithAdInfo:info];
+    
+    if (detailViewController) {
+        [self.navigationController pushViewController:detailViewController animated:YES];
+    }
+    
+    
+    
     // new lines of code added on 3/1/2017
    /*
     self.adId = value;
@@ -157,7 +174,7 @@ int rowNo;
     // commented to test new changes
       NSLog(@"bannerId value is %@",self.bannerId);
     
-    [self performSegueWithIdentifier:@"bannerIdsequeId" sender:self];
+//    [self performSegueWithIdentifier:@"bannerIdsequeId" sender:self];
 }
     
 /*
@@ -192,12 +209,12 @@ int rowNo;
 }
 
 */
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    
-    BannerViewController * destinationViewController = (BannerViewController *) segue.destinationViewController;
-    
-    destinationViewController.bannerId = self.bannerId;
-}
+//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+//    
+//    BannerViewController * destinationViewController = (BannerViewController *) segue.destinationViewController;
+//    
+//    destinationViewController.bannerId = self.bannerId;
+//}
 
 
 

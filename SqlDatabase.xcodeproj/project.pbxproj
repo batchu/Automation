@@ -10,7 +10,6 @@
 		274FD8C71E00520B003B11D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 274FD8C61E00520B003B11D5 /* main.m */; };
 		274FD8CA1E00520B003B11D5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 274FD8C91E00520B003B11D5 /* AppDelegate.m */; };
 		274FD8CD1E00520B003B11D5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 274FD8CC1E00520B003B11D5 /* ViewController.m */; };
-		274FD8D01E00520B003B11D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 274FD8CE1E00520B003B11D5 /* Main.storyboard */; };
 		274FD8D21E00520B003B11D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 274FD8D11E00520B003B11D5 /* Assets.xcassets */; };
 		274FD8D51E00520B003B11D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 274FD8D31E00520B003B11D5 /* LaunchScreen.storyboard */; };
 		274FD8E01E00520B003B11D5 /* SqlDatabaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 274FD8DF1E00520B003B11D5 /* SqlDatabaseTests.m */; };
@@ -21,8 +20,12 @@
 		27675F761E088CDF0041E577 /* Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27675F751E088CDF0041E577 /* Data.plist */; };
 		27D578211E20325C00F4E188 /* MPBannerAdDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27D578201E20325C00F4E188 /* MPBannerAdDetailViewController.xib */; };
 		27D578241E2032E600F4E188 /* MPBannerAdDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D578231E2032E600F4E188 /* MPBannerAdDetailViewController.m */; };
-		27D578281E2034CA00F4E188 /* MPBannerAdDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D578261E2034CA00F4E188 /* MPBannerAdDetailsViewController.m */; };
-		27D578291E2034CA00F4E188 /* MPBannerAdDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27D578271E2034CA00F4E188 /* MPBannerAdDetailsViewController.xib */; };
+		27D5782F1E217BE100F4E188 /* MPAdInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D5782C1E217BE100F4E188 /* MPAdInfo.m */; };
+		27D578301E217BE100F4E188 /* MPAdSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D5782E1E217BE100F4E188 /* MPAdSection.m */; };
+		27D5783D1E21801000F4E188 /* MPAdPersistenceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D578381E21801000F4E188 /* MPAdPersistenceManager.m */; };
+		27D5783E1E21801000F4E188 /* MPSampleAppInstanceProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D5783A1E21801000F4E188 /* MPSampleAppInstanceProvider.m */; };
+		27D5783F1E21801000F4E188 /* MPSampleAppLogReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D5783C1E21801000F4E188 /* MPSampleAppLogReader.m */; };
+		27D578421E219CD800F4E188 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27D578401E219CD800F4E188 /* Main.storyboard */; };
 		27E728DB1E1AD71900A1EE16 /* BannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E728DA1E1AD71900A1EE16 /* BannerViewController.m */; };
 		27E72A641E1C1DED00A1EE16 /* MPBannerAdManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E728EF1E1C1DED00A1EE16 /* MPBannerAdManager.m */; };
 		27E72A651E1C1DED00A1EE16 /* MPBannerAdManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E728EF1E1C1DED00A1EE16 /* MPBannerAdManager.m */; };
@@ -579,7 +582,6 @@
 		274FD8C91E00520B003B11D5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		274FD8CB1E00520B003B11D5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		274FD8CC1E00520B003B11D5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		274FD8CF1E00520B003B11D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		274FD8D11E00520B003B11D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		274FD8D41E00520B003B11D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		274FD8D61E00520B003B11D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -596,9 +598,17 @@
 		27D578201E20325C00F4E188 /* MPBannerAdDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MPBannerAdDetailViewController.xib; sourceTree = "<group>"; };
 		27D578221E2032E600F4E188 /* MPBannerAdDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPBannerAdDetailViewController.h; sourceTree = "<group>"; };
 		27D578231E2032E600F4E188 /* MPBannerAdDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPBannerAdDetailViewController.m; sourceTree = "<group>"; };
-		27D578251E2034CA00F4E188 /* MPBannerAdDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPBannerAdDetailsViewController.h; sourceTree = "<group>"; };
-		27D578261E2034CA00F4E188 /* MPBannerAdDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPBannerAdDetailsViewController.m; sourceTree = "<group>"; };
-		27D578271E2034CA00F4E188 /* MPBannerAdDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MPBannerAdDetailsViewController.xib; sourceTree = "<group>"; };
+		27D5782B1E217BE100F4E188 /* MPAdInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPAdInfo.h; sourceTree = "<group>"; };
+		27D5782C1E217BE100F4E188 /* MPAdInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPAdInfo.m; sourceTree = "<group>"; };
+		27D5782D1E217BE100F4E188 /* MPAdSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPAdSection.h; sourceTree = "<group>"; };
+		27D5782E1E217BE100F4E188 /* MPAdSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPAdSection.m; sourceTree = "<group>"; };
+		27D578371E21801000F4E188 /* MPAdPersistenceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPAdPersistenceManager.h; sourceTree = "<group>"; };
+		27D578381E21801000F4E188 /* MPAdPersistenceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPAdPersistenceManager.m; sourceTree = "<group>"; };
+		27D578391E21801000F4E188 /* MPSampleAppInstanceProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPSampleAppInstanceProvider.h; sourceTree = "<group>"; };
+		27D5783A1E21801000F4E188 /* MPSampleAppInstanceProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPSampleAppInstanceProvider.m; sourceTree = "<group>"; };
+		27D5783B1E21801000F4E188 /* MPSampleAppLogReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPSampleAppLogReader.h; sourceTree = "<group>"; };
+		27D5783C1E21801000F4E188 /* MPSampleAppLogReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPSampleAppLogReader.m; sourceTree = "<group>"; };
+		27D578411E219CD800F4E188 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		27E728DA1E1AD71900A1EE16 /* BannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerViewController.m; sourceTree = "<group>"; };
 		27E728DC1E1AD73E00A1EE16 /* BannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerViewController.h; sourceTree = "<group>"; };
 		27E728EE1E1C1DED00A1EE16 /* MPBannerAdManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPBannerAdManager.h; sourceTree = "<group>"; };
@@ -1016,17 +1026,16 @@
 		274FD8C41E00520B003B11D5 /* SqlDatabase */ = {
 			isa = PBXGroup;
 			children = (
+				27D578401E219CD800F4E188 /* Main.storyboard */,
+				27D578361E21801000F4E188 /* misc */,
+				27D5782A1E217BE100F4E188 /* Domain */,
 				274FD8C81E00520B003B11D5 /* AppDelegate.h */,
 				274FD8C91E00520B003B11D5 /* AppDelegate.m */,
 				274FD8CB1E00520B003B11D5 /* ViewController.h */,
-				27D578251E2034CA00F4E188 /* MPBannerAdDetailsViewController.h */,
-				27D578261E2034CA00F4E188 /* MPBannerAdDetailsViewController.m */,
-				27D578271E2034CA00F4E188 /* MPBannerAdDetailsViewController.xib */,
 				27D578231E2032E600F4E188 /* MPBannerAdDetailViewController.m */,
 				27D578221E2032E600F4E188 /* MPBannerAdDetailViewController.h */,
 				27D578201E20325C00F4E188 /* MPBannerAdDetailViewController.xib */,
 				274FD8CC1E00520B003B11D5 /* ViewController.m */,
-				274FD8CE1E00520B003B11D5 /* Main.storyboard */,
 				27675F751E088CDF0041E577 /* Data.plist */,
 				274FD8D11E00520B003B11D5 /* Assets.xcassets */,
 				274FD8D31E00520B003B11D5 /* LaunchScreen.storyboard */,
@@ -1064,6 +1073,30 @@
 				274FD8EC1E00520B003B11D5 /* Info.plist */,
 			);
 			path = SqlDatabaseUITests;
+			sourceTree = "<group>";
+		};
+		27D5782A1E217BE100F4E188 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				27D5782B1E217BE100F4E188 /* MPAdInfo.h */,
+				27D5782C1E217BE100F4E188 /* MPAdInfo.m */,
+				27D5782D1E217BE100F4E188 /* MPAdSection.h */,
+				27D5782E1E217BE100F4E188 /* MPAdSection.m */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		27D578361E21801000F4E188 /* misc */ = {
+			isa = PBXGroup;
+			children = (
+				27D578371E21801000F4E188 /* MPAdPersistenceManager.h */,
+				27D578381E21801000F4E188 /* MPAdPersistenceManager.m */,
+				27D578391E21801000F4E188 /* MPSampleAppInstanceProvider.h */,
+				27D5783A1E21801000F4E188 /* MPSampleAppInstanceProvider.m */,
+				27D5783B1E21801000F4E188 /* MPSampleAppLogReader.h */,
+				27D5783C1E21801000F4E188 /* MPSampleAppLogReader.m */,
+			);
+			path = misc;
 			sourceTree = "<group>";
 		};
 		27E728EB1E1C1DED00A1EE16 /* MoPubSDK */ = {
@@ -1701,6 +1734,7 @@
 				274FD8D51E00520B003B11D5 /* LaunchScreen.storyboard in Resources */,
 				27E72C411E1C1DEE00A1EE16 /* MPMutedBtn@2x.png in Resources */,
 				27E72C471E1C1DEE00A1EE16 /* MPPlayBtn.png in Resources */,
+				27D578421E219CD800F4E188 /* Main.storyboard in Resources */,
 				27E72AE21E1C1DEE00A1EE16 /* LICENSE in Resources */,
 				27E72C4A1E1C1DEE00A1EE16 /* MPPlayBtn@2x.png in Resources */,
 				27E72C561E1C1DEE00A1EE16 /* MPUnmutedBtn@3x.png in Resources */,
@@ -1716,10 +1750,8 @@
 				27E72C531E1C1DEE00A1EE16 /* MPUnmutedBtn@2x.png in Resources */,
 				27E72C591E1C1DEE00A1EE16 /* MRAID.bundle in Resources */,
 				27E72C321E1C1DEE00A1EE16 /* MPCloseButtonX@3x.png in Resources */,
-				27D578291E2034CA00F4E188 /* MPBannerAdDetailsViewController.xib in Resources */,
 				27E72C291E1C1DEE00A1EE16 /* MPCloseBtn@3x.png in Resources */,
 				27E72C2C1E1C1DEE00A1EE16 /* MPCloseButtonX.png in Resources */,
-				274FD8D01E00520B003B11D5 /* Main.storyboard in Resources */,
 				27D578211E20325C00F4E188 /* MPBannerAdDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1790,6 +1822,7 @@
 				27E72BB71E1C1DEE00A1EE16 /* MPStaticNativeAdImpressionTimer.m in Sources */,
 				27E72B721E1C1DEE00A1EE16 /* MPVASTTrackingEvent.m in Sources */,
 				27E72C081E1C1DEE00A1EE16 /* MOPUBNativeVideoAdConfigValues.m in Sources */,
+				27D5782F1E217BE100F4E188 /* MPAdInfo.m in Sources */,
 				27E72A9D1E1C1DEE00A1EE16 /* MPURLActionInfo.m in Sources */,
 				27E72BAB1E1C1DEE00A1EE16 /* MPNativeCache.m in Sources */,
 				27E72B961E1C1DEE00A1EE16 /* MPImageDownloadQueue.m in Sources */,
@@ -1799,6 +1832,7 @@
 				27E72BA81E1C1DEE00A1EE16 /* MPNativeAdUtils.m in Sources */,
 				27E72B931E1C1DEE00A1EE16 /* MPDiskLRUCache.m in Sources */,
 				27E72B6F1E1C1DEE00A1EE16 /* MPVASTStringUtilities.m in Sources */,
+				27D5783D1E21801000F4E188 /* MPAdPersistenceManager.m in Sources */,
 				27E72ABB1E1C1DEE00A1EE16 /* MPRetryingHTTPOperation.m in Sources */,
 				27E72A731E1C1DEE00A1EE16 /* MPActivityViewControllerHelper+TweetShare.m in Sources */,
 				27E72A6A1E1C1DEE00A1EE16 /* MPBaseBannerAdapter.m in Sources */,
@@ -1832,6 +1866,7 @@
 				27E72BE71E1C1DEE00A1EE16 /* MPServerAdPositioning.m in Sources */,
 				27E72AB81E1C1DEE00A1EE16 /* MPQRunLoopOperation.m in Sources */,
 				27E72B691E1C1DEE00A1EE16 /* MPVASTResource.m in Sources */,
+				27D5783E1E21801000F4E188 /* MPSampleAppInstanceProvider.m in Sources */,
 				27E72BF31E1C1DEE00A1EE16 /* MPStreamAdPlacer.m in Sources */,
 				27E72B8D1E1C1DEE00A1EE16 /* MPAdPlacerInvocation.m in Sources */,
 				274FD8CA1E00520B003B11D5 /* AppDelegate.m in Sources */,
@@ -1872,7 +1907,6 @@
 				27E72B871E1C1DEE00A1EE16 /* MPInterstitialAdController.m in Sources */,
 				27E72B301E1C1DEE00A1EE16 /* MPInternalUtils.m in Sources */,
 				27E72BE41E1C1DEE00A1EE16 /* MPNativeCustomEvent.m in Sources */,
-				27D578281E2034CA00F4E188 /* MPBannerAdDetailsViewController.m in Sources */,
 				27E72C1D1E1C1DEE00A1EE16 /* MOPUBNativeVideoAdRenderer.m in Sources */,
 				27E72B7E1E1C1DEE00A1EE16 /* MPAdView.m in Sources */,
 				27E72B631E1C1DEE00A1EE16 /* MPVASTMediaFile.m in Sources */,
@@ -1882,6 +1916,7 @@
 				27E72AE51E1C1DEE00A1EE16 /* MPMRAIDBannerCustomEvent.m in Sources */,
 				27E72A9A1E1C1DEE00A1EE16 /* MPProgressOverlayView.m in Sources */,
 				27E72A7F1E1C1DEE00A1EE16 /* MPAdConfiguration.m in Sources */,
+				27D578301E217BE100F4E188 /* MPAdSection.m in Sources */,
 				27E72A761E1C1DEE00A1EE16 /* MPActivityViewControllerHelper.m in Sources */,
 				27E72AAC1E1C1DEE00A1EE16 /* MPLogEvent.m in Sources */,
 				27E72A911E1C1DEE00A1EE16 /* MPEnhancedDeeplinkRequest.m in Sources */,
@@ -1922,6 +1957,7 @@
 				27E72AFA1E1C1DEE00A1EE16 /* MRController.m in Sources */,
 				27E72AEE1E1C1DEE00A1EE16 /* MRBridge.m in Sources */,
 				94CF33441E11D34C00721C88 /* ListViewController.m in Sources */,
+				27D5783F1E21801000F4E188 /* MPSampleAppLogReader.m in Sources */,
 				27E72BE11E1C1DEE00A1EE16 /* MPNativeAdSource.m in Sources */,
 				27E72B9F1E1C1DEE00A1EE16 /* MPNativeAd+Internal.m in Sources */,
 				27E72BB41E1C1DEE00A1EE16 /* MPNativeView.m in Sources */,
@@ -2294,20 +2330,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		274FD8CE1E00520B003B11D5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				274FD8CF1E00520B003B11D5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		274FD8D31E00520B003B11D5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				274FD8D41E00520B003B11D5 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		27D578401E219CD800F4E188 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27D578411E219CD800F4E188 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -6,7 +6,7 @@
 //
 
 #import "MPAdPersistenceManager.h"
-#import "ListViewController.h"
+#import "MPAdInfo.h"
 
 #define kSavedAdsInfoKey @"com.mopub.adunitids"
 
@@ -59,9 +59,9 @@ static MPAdPersistenceManager *sharedManager = nil;
 {
     MPAdInfo *target = nil;
     
-    for (MPAdInfo *ad in self.savedAds) {
-        if ([ad.ID isEqualToString:adID]) {
-            target = ad;
+    for (MPAdInfo *mPAdInfo in self.savedAds) {
+        if ([mPAdInfo.ID isEqualToString:adID]) {
+            target = mPAdInfo;
             break;
         }
     }

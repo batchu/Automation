@@ -19,7 +19,17 @@
 }
 
 
-
+-(id)initWithCoder:(NSCoder *)aDecoder{
+    if (self = [super initWithCoder:aDecoder]) {
+        UIView *xibView = [[[NSBundle mainBundle] loadNibNamed:@"MPBannerAdDetailViewController"
+                                                         owner:self
+                                                       options:nil] objectAtIndex:0];
+        xibView.frame = self.view.bounds;
+        xibView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+        [self.view addSubview: xibView];
+    }
+    return self;
+}
 
 
 @end
