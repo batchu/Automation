@@ -1,4 +1,4 @@
-//
+		//
 //  ListViewController.m
 //  SqlDatabase
 //
@@ -14,10 +14,30 @@
 
 @end
 
+//@implementation NSString (EnumParser)
+//
+//- (MPAdInfoType)AdTypeEnumFromString{
+//    NSDictionary<NSString*,NSNumber*> *adTypes = @{
+//                                                  @"Banner": @(Banner),
+//                                                  @"Interstitial": @(Interstitial),
+//                                                  @"Native": @(Native),
+//                                                  @"NativeVideo": @(NativeVideo),
+//                                                  @"RewardedVideo": @(RewardedVideo),
+//                                                  };
+//    return adTypes[self].integerValue;
+//}
+//
+//@end
+
 @implementation ListViewController
 
 @synthesize adList;
 @synthesize bannerId;
+
+//added on 3/1/2017
+@synthesize adId;
+@synthesize title;
+@synthesize type;
 
 int rowNo;
 
@@ -31,24 +51,6 @@ int rowNo;
     // Dispose of any resources that can be recreated.
 }
 
-
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-/*- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-    
-    ViewController *startingViewController;
-    ListViewController *destinationViewController;
-    
-    startingViewController = (ViewController *)segue.sourceViewController;
-    
-    destinationViewController = (ListViewController *)segue.destinationViewController;
-    
-    destinationViewController.adList = 
-    
-}*/
 
 
 -(NSInteger) numberOfSectionsInTableView:(UITableView *)tableView
@@ -101,12 +103,95 @@ int rowNo;
     NSLog(@"ad name%@",key);
      NSLog(@"ad id%@",value);
     self.bannerId=value;
-      NSLog(@"bannerId value is %@",self.bannerId);
     
-    [self performSegueWithIdentifier:@"bannerIdsequeId" sender:self];
+    // new lines of code added on 3/1/2017
+   /*
+    self.adId = value;
+    self.title = key;
+    self.type = [key AdTypeEnumFromString];
+    [ListViewController infoWithTitle:self.title ID:self.adId type:*(self.type)];
+    
+    
+    UIViewController *detailViewController = nil;
+    ListViewController *info ;
+    */
+     
+     /*
+    if([key  isEqual: @"banner"])
+    {
+          //  detailViewController = [[MPBannerAdDetailViewController alloc] initWithAdInfo:info];
+    }
+//                case Interstitial:
+//            detailViewController = [[MPInterstitialAdDetailViewController alloc] initWithAdInfo:info];
+//            break;
+//        case RewardedVideo:
+//            detailViewController = [[MPRewardedVideoAdDetailViewController alloc] initWithAdInfo:info];
+//            break;
+//        case Native:
+//            detailViewController = [[MPNativeAdDetailViewController alloc] initWithAdInfo:info];
+//            break;
+//        case NativeVideo:
+//            detailViewController = [[MPNativeAdPlacerCollectionViewController alloc] initWithAdInfo:info];
+//            break;
+//        case MPAdInfoNativeTableViewPlacer:
+//            detailViewController = [[MPNativeAdPlacerTableViewController alloc] initWithAdInfo:info];
+//            break;
+//        case MPAdInfoNativePageViewControllerPlacer:
+//            detailViewController = [[MPNativeAdPlacerPageViewController alloc] initWithAdInfo:info];
+//            break;
+//        default:
+//            break;
+    
+    
+    if (detailViewController) {
+        [self.navigationController pushViewController:detailViewController animated:YES];
+    }
+
+    
     
 }
 
+    
+   */
+    
+    // commented to test new changes
+      NSLog(@"bannerId value is %@",self.bannerId);
+    
+    [self performSegueWithIdentifier:@"bannerIdsequeId" sender:self];
+}
+    
+/*
+
++ (ListViewController *)infoWithTitle:(NSString *)title ID:(NSString *)ID type:(MPAdInfoType)type {
+    ListViewController *info = [[ListViewController alloc] init];
+    info.title = title;
+    info.adId = ID;
+    info.type = &(type);
+    return info;
+}
+
+- (id)initWithCoder:(NSCoder *)aDecoder
+{
+    self = [super init];
+    if(self != nil)
+    {
+        self.title = [aDecoder decodeObjectForKey:@"title"];
+        self.adId = [aDecoder decodeObjectForKey:@"ID"];
+        self.type = [aDecoder decodeIntegerForKey:@"type"];
+        self.keywords = [aDecoder decodeObjectForKey:@"keywords"];
+    }
+    return self;
+}
+
+- (void)encodeWithCoder:(NSCoder *)aCoder
+{
+    [aCoder encodeObject:self.title forKey:@"title"];
+    [aCoder encodeObject:self.adId forKey:@"ID"];
+    [aCoder encodeInteger:self.type forKey:@"type"];
+    [aCoder encodeObject:((self.keywords != nil) ? self.keywords : @"") forKey:@"keywords"];
+}
+
+*/
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
     BannerViewController * destinationViewController = (BannerViewController *) segue.destinationViewController;
@@ -116,4 +201,6 @@ int rowNo;
 
 
 
-@end
+    @end
+
+
