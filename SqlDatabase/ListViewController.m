@@ -117,7 +117,8 @@ int rowNo;
     detailViewController = [[MPBannerAdDetailViewController alloc] initWithAdInfo:info];
     
     if (detailViewController) {
-        [self.navigationController pushViewController:detailViewController animated:YES];
+//        [self.navigationController pushViewController:detailViewController animated:YES];
+        [self presentViewController:detailViewController animated:YES completion:nil];
     }
     
     
