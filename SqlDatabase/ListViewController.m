@@ -26,13 +26,10 @@ int rowNo;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+     self.navigationItem.title=@"Supported Ad Formats";
+    
 }
 
--(void)viewDidAppear:(BOOL)animated
-{
-    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back" style: UIBarButtonItemStyleBordered target:self action:@selector(Back)];
-    self.navigationItem.leftBarButtonItem = backButton;
-}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -47,15 +44,17 @@ int rowNo;
 
 -(NSInteger) tableView: (UITableView *) tableView numberOfRowsInSection:(NSInteger)section
 {
+    
+    
     int count = (int)[adList count];
     NSLog(@"Count = %d", count);
     return count;
 }
 
--(NSString *) tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
-{
-    return @"Items";
-}
+//-(NSString *) tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+//{
+//    return @"Supported Ad Formats";
+//}
 
 -(UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {

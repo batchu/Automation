@@ -86,6 +86,7 @@
     
 
     [super viewDidLoad];
+    self.navigationItem.title=@"Supported Ad Networks";
     // Do any additional setup after loading the view, typically from a nib.
 }
 
