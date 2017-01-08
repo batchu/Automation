@@ -53,6 +53,12 @@
     [self.spinner startAnimating];
 }
 
+//-(void)viewDidAppear:(BOOL)animated
+//{
+//    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back" style: UIBarButtonItemStyleBordered target:self action:@selector(Back)];
+//    self.navigationItem.leftBarButtonItem = backButton;
+//}
+
 - (IBAction)loadAdClicked:(id)sender
 {
     self.adView.keywords = self.keywordsTextField.text;
@@ -84,6 +90,9 @@
         [self configureAd];
         [self loadAd];
         self.didLoadAd = YES;
+        
+        
+        
     }
 }
 

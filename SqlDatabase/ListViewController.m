@@ -28,6 +28,12 @@ int rowNo;
     // Do any additional setup after loading the view.
 }
 
+-(void)viewDidAppear:(BOOL)animated
+{
+    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back" style: UIBarButtonItemStyleBordered target:self action:@selector(Back)];
+    self.navigationItem.leftBarButtonItem = backButton;
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -80,20 +86,23 @@ int rowNo;
    NSDictionary *selectedItem = [adList objectAtIndex:indexPath.row];
 //    NSLog(@"selected item value=%@", se);
    NSString  *key = [[selectedItem allKeys] objectAtIndex:0]; // Assumes 'message' is not empty
-    NSString *value = [selectedItem objectForKey:key];
+   NSDictionary *adTypeDict = [selectedItem objectForKey:key];
+    	
+    
+    
     NSLog(@"ad name%@",key);
-     NSLog(@"ad id%@",value);
+     NSLog(@"ad id%@",adTypeDict);
     
     MPAdInfo *info = [[MPAdInfo alloc] init];
-    info.ID = value;
+    info.ID = [adTypeDict objectForKey:@"id"];
     info.title=key;
-    info.type=0;
+    info.type= (MPAdInfoType) [adTypeDict objectForKey:@"type"];
     
     UIViewController *detailViewController = nil;
     
+    Class adTypeClass = NSClassFromString([adTypeDict objectForKey:@"class"]);
     
-    
-    detailViewController = [[MPBannerAdDetailViewController alloc] initWithAdInfo:info];
+    detailViewController = [[adTypeClass alloc] initWithAdInfo:info];
     if (detailViewController) {
         [self presentViewController:detailViewController animated:YES completion:nil];
     }

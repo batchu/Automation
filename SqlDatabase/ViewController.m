@@ -55,6 +55,8 @@
         
         adList = arrayValues;
         
+        
+        /* used for parsing only, not required at the moment
         int count = (int)[arrayValues count];
         
         NSLog(@"Size of array = %d", count);
@@ -74,13 +76,13 @@
             actualValue = [specificDict objectForKey:actualKey];
             NSLog(@" Item%d - Key %@, Value %@", i, actualKey, actualValue);
         }
-
+*/
     }
 }
 
 
 - (void)viewDidLoad {
-    adapterCollection =[[NSArray alloc]initWithObjects:@"",@"Millennial Media",@"AdMob",@"FAN",@"AdColony",@"Chartboost",@"Conversant",@"Tapjoy",@"Yahoo",@"Unity Ads",@"Vungle", nil];
+    adapterCollection =[[NSArray alloc]initWithObjects:@"",@"Millennial Media",@"AdMob",@"FAN",@"AdColony",@"Chartboost",@"Mopub",@"Tapjoy",@"Yahoo",@"Unity Ads",@"Vungle", nil];
     
 
     [super viewDidLoad];
