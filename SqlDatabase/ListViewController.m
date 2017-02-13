@@ -22,12 +22,17 @@
 
 @synthesize adList;
 
+
+
 int rowNo;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
      self.navigationItem.title=@"Supported Ad Formats";
+//    [self.backButton addTarget:self
+//                   action:@selector(goBack)
+//         forControlEvents:UIControlEventTouchUpInside];
     
 }
 
@@ -107,18 +112,20 @@ int rowNo;
         [self presentViewController:detailViewController animated:YES completion:nil];
     }
 }
-- (IBAction)goBack:(id)sender {
-    
-    
-    UIViewController *viewController = nil;
-    
-    
-    viewController = [[ViewController alloc] init];
-    if (viewController) {
-        [self presentViewController:viewController animated:YES completion:nil];
-    }
-    
-}
+//- (IBAction)goBack {
+//    
+//    
+//    UIViewController *viewController = nil;
+//    
+//    
+//    viewController = [[ViewController alloc] init];
+//    if (viewController) {
+//        [self presentViewController:viewController animated:YES completion:nil];
+//    }
+//    
+//}
+
+
 @end
 
 

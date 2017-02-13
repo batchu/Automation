@@ -53,7 +53,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="155" y="267"/>
+            <point key="canvasLocation" x="-179" y="344"/>
         </scene>
         <!--List View Controller-->
         <scene sceneID="8hG-54-gDH">
@@ -87,30 +87,32 @@
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHn-pk-kgt">
-                                <rect key="frame" x="22" y="14" width="34" height="30"/>
+                                <rect key="frame" x="23" y="14" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
-                                    <action selector="goBack:" destination="eZ9-NP-DVp" eventType="touchDown" id="Oka-LJ-Keh"/>
+
+                                    <segue destination="BYZ-38-t0r" kind="modal" id="MZF-7C-iHY"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
-                        <outlet property="backButton" destination="bHn-pk-kgt" id="cKa-SB-4Se"/>
+                        <outlet property="backButton" destination="bHn-pk-kgt" id="7GI-MM-9hU"/>
                     </connections>
                 </viewController>
                 <navigationItem title="NetworkSelectionPage" id="U3h-c4-mq0"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sia-vr-uqV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="629" y="267"/>
+            <point key="canvasLocation" x="325.5" y="343.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="tKh-z9-n0h">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="957-9F-VWn" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="1Me-Fp-5Hl"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="gpf-Dz-4M2">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -122,7 +124,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yf3-Ei-zgG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-408" y="267"/>
+            <point key="canvasLocation" x="-607" y="344"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -130,4 +132,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="MZF-7C-iHY"/>
+    </inferredMetricsTieBreakers>
 </document>

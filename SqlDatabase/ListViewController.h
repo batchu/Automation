@@ -7,13 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MPBannerAdDetailViewController.h"
 #import "MPAdInfo.h"
 
 
 @interface ListViewController : UIViewController <UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UIButton *backButton;
-- (IBAction)goBack:(id)sender;
+
+//- (IBAction)goBack;
 
 @property (weak, nonatomic) NSArray *adList;
 @end
