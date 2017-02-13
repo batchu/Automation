@@ -39,21 +39,16 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="NetworkSelectionPage" id="FfO-qX-SG6">
-                        <barButtonItem key="rightBarButtonItem" title="ListAds" id="0sy-vz-gUc">
-                            <connections>
-                                <segue destination="eZ9-NP-DVp" kind="modal" id="w8G-GW-5cB"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="NetworkSelectionPage" id="FfO-qX-SG6"/>
                     <connections>
                         <outlet property="networkPicker" destination="k12-Ny-HXn" id="Tw5-Ns-MIy"/>
                         <outlet property="selectedNetwork" destination="74m-W3-HIO" id="Y5v-1B-Fw3"/>
+                        <segue destination="eZ9-NP-DVp" kind="modal" identifier="segueToListView" id="bI2-hP-ixa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-179" y="344"/>
+            <point key="canvasLocation" x="-315" y="374"/>
         </scene>
         <!--List View Controller-->
         <scene sceneID="8hG-54-gDH">
@@ -91,7 +86,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
-
                                     <segue destination="BYZ-38-t0r" kind="modal" id="MZF-7C-iHY"/>
                                 </connections>
                             </button>
@@ -110,6 +104,7 @@
         <!--Navigation Controller-->
         <scene sceneID="tKh-z9-n0h">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yf3-Ei-zgG" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="957-9F-VWn" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="1Me-Fp-5Hl"/>
@@ -122,9 +117,8 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="9Wd-bn-D2Z"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yf3-Ei-zgG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-607" y="344"/>
+            <point key="canvasLocation" x="-761" y="328"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -133,6 +127,6 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="MZF-7C-iHY"/>
+        <segue reference="9Wd-bn-D2Z"/>
     </inferredMetricsTieBreakers>
 </document>

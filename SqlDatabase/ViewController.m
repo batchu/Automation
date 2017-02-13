@@ -55,6 +55,10 @@
         
         adList = arrayValues;
         
+        [self performSegueWithIdentifier:@"segueToListView" sender:pickerView];
+        
+//        segueToListView
+        
         
         /* used for parsing only, not required at the moment
         int count = (int)[arrayValues count];
