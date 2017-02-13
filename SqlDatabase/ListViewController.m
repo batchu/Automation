@@ -7,6 +7,7 @@
 //
 
 #import "ListViewController.h"
+#import "ViewController.h"
 #import "BannerViewController.h"
 #import "MPBannerAdDetailViewController.h"
 #import "MPAdInfo.h"
@@ -105,6 +106,18 @@ int rowNo;
     if (detailViewController) {
         [self presentViewController:detailViewController animated:YES completion:nil];
     }
+}
+- (IBAction)goBack:(id)sender {
+    
+    
+    UIViewController *viewController = nil;
+    
+    
+    viewController = [[ViewController alloc] init];
+    if (viewController) {
+        [self presentViewController:viewController animated:YES completion:nil];
+    }
+    
 }
 @end
 

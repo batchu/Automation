@@ -12,6 +12,8 @@
 
 
 @interface ListViewController : UIViewController <UITableViewDataSource>
+@property (weak, nonatomic) IBOutlet UIButton *backButton;
+- (IBAction)goBack:(id)sender;
 
 @property (weak, nonatomic) NSArray *adList;
 @end
