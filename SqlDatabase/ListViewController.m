@@ -30,10 +30,6 @@ int rowNo;
     [super viewDidLoad];
     // Do any additional setup after loading the view.
      self.navigationItem.title=@"Supported Ad Formats";
-
-    
-    UIButton* myInfoButton = [UIButton buttonWithType:UIButtonTypeInfoLight];
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:myInfoButton];
     
 }
 

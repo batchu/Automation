@@ -51,9 +51,6 @@
     self.loadAdButton.enabled = NO;
 
     [self.spinner startAnimating];
-    UIButton* myInfoButton = [UIButton buttonWithType:UIButtonTypeInfoLight];
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:myInfoButton];
-    
    
 }
 
