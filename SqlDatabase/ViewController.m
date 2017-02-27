@@ -84,6 +84,29 @@
     }
 }
 
+-(void)loadView
+{
+    self.view = [[UIView alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
+    
+    navBar = [[UINavigationBar alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 60)];
+    
+    navItem = [[UINavigationItem alloc]initWithTitle:@"Automating Mediation"];
+    
+    backButton =[[UIBarButtonItem alloc] initWithTitle:@"Back"style:UIBarButtonItemStyleDone target:self action:@selector(backButtonPressed)];
+    
+    [navItem setLeftBarButtonItem:backButton];
+    
+    [navBar setItems:[NSArray arrayWithObject:navItem]];
+    
+//    self.navBar.frame = CGRectMake(0, 0, self.view.frame.size.width, 60);
+//    
+//    self.navBar.barStyle = UIBarStyleDefault;
+    
+    [self.view addSubview:navBar];
+    
+    
+}
+
 
 - (void)viewDidLoad {
     adapterCollection =[[NSArray alloc]initWithObjects:@"",@"Millennial Media",@"AdMob",@"FAN",@"AdColony",@"Chartboost",@"Mopub",@"Tapjoy",@"Yahoo",@"Unity Ads",@"Vungle", nil];

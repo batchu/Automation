@@ -10,13 +10,23 @@
 #import "sqlite3.h"
 #import "ListViewController.h"
 
+
+
 @interface ViewController : UIViewController<UIPickerViewDataSource, UIPickerViewDelegate>
 {
     NSArray *adapterCollection;
-    //NSArray *adList;
+    
+    
+    //Adding back button logic
+    UIBarButtonItem *backButton;
+    UINavigationItem *navItem;
+    UINavigationBar *navBar;
 
 }
 
+-(void)backButtonPressed;
+//not required for now
+//@property(nonatomic,retain)UINavigationBar *navBar;
 
 @property (weak, nonatomic) IBOutlet UIPickerView *networkPicker;
 
