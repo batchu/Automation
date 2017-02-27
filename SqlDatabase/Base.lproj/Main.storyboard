@@ -43,12 +43,12 @@
                     <connections>
                         <outlet property="networkPicker" destination="k12-Ny-HXn" id="Tw5-Ns-MIy"/>
                         <outlet property="selectedNetwork" destination="74m-W3-HIO" id="Y5v-1B-Fw3"/>
-                        <segue destination="eZ9-NP-DVp" kind="modal" identifier="segueToListView" id="bI2-hP-ixa"/>
+                        <segue destination="eZ9-NP-DVp" kind="push" identifier="segueToListView" id="fAz-9s-9Xg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1312.5" y="324.5"/>
+            <point key="canvasLocation" x="1272" y="360"/>
         </scene>
         <!--NetworkSelectionPage-->
         <scene sceneID="8hG-54-gDH">
@@ -90,13 +90,10 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="NetworkSelectionPage" id="U3h-c4-mq0"/>
-                    <connections>
-                        <outlet property="backButton" destination="bHn-pk-kgt" id="7GI-MM-9hU"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sia-vr-uqV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1887" y="325"/>
+            <point key="canvasLocation" x="1976" y="379"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ntM-mB-EYJ">
@@ -114,7 +111,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Asl-Gq-FyW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="725.5" y="324.5"/>
+            <point key="canvasLocation" x="680" y="349"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
