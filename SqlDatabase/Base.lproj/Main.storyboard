@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="957-9F-VWn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="3BW-0g-mgl">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -48,9 +48,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-315" y="374"/>
+            <point key="canvasLocation" x="1312.5" y="324.5"/>
         </scene>
-        <!--List View Controller-->
+        <!--NetworkSelectionPage-->
         <scene sceneID="8hG-54-gDH">
             <objects>
                 <viewController id="eZ9-NP-DVp" customClass="ListViewController" sceneMemberID="viewController">
@@ -85,40 +85,36 @@
                                 <rect key="frame" x="23" y="14" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="modal" id="MZF-7C-iHY"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" title="NetworkSelectionPage" id="U3h-c4-mq0"/>
                     <connections>
                         <outlet property="backButton" destination="bHn-pk-kgt" id="7GI-MM-9hU"/>
                     </connections>
                 </viewController>
-                <navigationItem title="NetworkSelectionPage" id="U3h-c4-mq0"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sia-vr-uqV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="325.5" y="343.5"/>
+            <point key="canvasLocation" x="1887" y="325"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="tKh-z9-n0h">
+        <scene sceneID="ntM-mB-EYJ">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yf3-Ei-zgG" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="957-9F-VWn" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3BW-0g-mgl" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="1Me-Fp-5Hl"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gpf-Dz-4M2">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YVD-gu-ZqX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="9Wd-bn-D2Z"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="IFZ-tP-Ki9"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Asl-Gq-FyW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-761" y="328"/>
+            <point key="canvasLocation" x="725.5" y="324.5"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -126,7 +122,4 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
-    <inferredMetricsTieBreakers>
-        <segue reference="9Wd-bn-D2Z"/>
-    </inferredMetricsTieBreakers>
 </document>

@@ -30,11 +30,13 @@ int rowNo;
     [super viewDidLoad];
     // Do any additional setup after loading the view.
      self.navigationItem.title=@"Supported Ad Formats";
-//    [self.backButton addTarget:self
-//                   action:@selector(goBack)
-//         forControlEvents:UIControlEventTouchUpInside];
+
+    
+    UIButton* myInfoButton = [UIButton buttonWithType:UIButtonTypeInfoLight];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:myInfoButton];
     
 }
+
 
 
 - (void)didReceiveMemoryWarning {
@@ -109,7 +111,9 @@ int rowNo;
     
     detailViewController = [[adTypeClass alloc] initWithAdInfo:info];
     if (detailViewController) {
-        [self presentViewController:detailViewController animated:YES completion:nil];
+        //[self presentViewController:detailViewController animated:YES completion:nil];
+        NSLog(@"nav controller = %@", self.navigationController); 
+        [self.navigationController pushViewController:detailViewController animated:YES];
     }
 }
 //- (IBAction)goBack {
